@@ -3,22 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>miOS - Distro para crear, jugar y soñar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>miOS - Sistema Operativo Comunitario</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N9CDW9B7');</script>
 <body>
+
   <header class="header">
     <div class="header-inner">
       <div class="brand">
@@ -26,10 +16,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="brand-sub">Debian · XFCE</span>
       </div>
       <nav>
-        <a href="caracteristicas.html">Características</a>
-        <a href="comparativa.html">Comparativa</a>
-        <a href="descargas.html">Descargas</a>
-        <a href="comunidad.html">Comunidad</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#comparativa">Comparativa</a>
+        <a href="#descargas">Descargas</a>
+        <a href="#comunidad">Comunidad</a>
       </nav>
     </div>
   </header>
@@ -39,66 +29,120 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="hero-shell">
         <div class="hero-copy">
           <span class="eyebrow">Para crear, jugar y soñar</span>
-          <h1 class="animate-letters">
-  miOS<span class="material-symbols-rounded icon-rocket">rocket_launch</span>
-</h1>
-          </h1>
-          <p class="hero-text">Una distro basada en Debian, sin snaps ni telemetría, creada para rescatar equipos viejos y devolverles vida. Un sistema personalizable y cercano.</p>
+          
+          <h1 class="animate-letters">miOS</h1>
+          
+          <p class="hero-text">
+            Una distro basada en Debian, sin snaps ni telemetría, creada para rescatar equipos viejos y devolverles vida. Un sistema personalizable y cercano.
+          </p>
+          
           <div class="hero-pill-group">
             <span>Basado en Debian</span>
             <span>Personalizable</span>
             <span>Requiere mínimo 2GB RAM</span>
           </div>
+          
           <div class="hero-buttons">
-            <a class="btn primary" href="descargas.html">Descargas</a>
-            <a class="btn outline" href="https://t.me/mioscanaloficial" target="_blank" rel="noreferrer">Únete</a>
+            <a href="#descargas" class="btn primary">Descargas</a>
+            <a href="#comunidad" class="btn outline">Únete</a>
           </div>
+          
           <p class="hero-note">Sin Snap. Sin telemetría. Hecho por la comunidad para equipos reales.</p>
         </div>
       </div>
     </section>
 
-    <section class="section quick-links">
-      <div class="grid cards-grid">
-        <a class="card" href="descargas.html">
-          <div class="card-icon">
-            <span class="material-symbols-rounded icon-download">download</span>
-          </div>
-          <h3 class="animate-letters">Descargas</h3>
-          <p>ISO oficial, checksums y guías de instalación.</p>
-        </a>
+    <section id="caracteristicas" class="quick-links">
+      <div class="section">
+        <div class="section-head">
+          <span>Rendimiento e Innovación</span>
+          <h2>¿Por qué elegir miOS?</h2>
+          <p>Diseñado minuciosamente para ofrecer una experiencia moderna y fluida sin sacrificar tus recursos de hardware.</p>
+        </div>
         
-        <a class="card" href="caracteristicas.html">
-          <div class="card-icon">
-            <span class="material-symbols-rounded icon-features">auto_awesome</span>
+        <div class="grid cards-grid">
+          <div class="card">
+            <div class="card-icon">
+              <span class="material-symbols-rounded icon-features">bolt</span>
+            </div>
+            <h3>Ultra Ligero</h3>
+            <p>Optimizado para consumir el mínimo de memoria RAM y CPU, ideal para revivir ordenadores antiguos.</p>
           </div>
-          <h3 class="animate-letters">Características</h3>
-          <p>Rendimiento, privacidad y entorno XFCE optimizado.</p>
-        </a>
+          <div class="card">
+            <div class="card-icon">
+              <span class="material-symbols-rounded icon-community">shield</span>
+            </div>
+            <h3>100% Privado</h3>
+            <p>Completamente libre de telemetría, rastreadores o paquetes Snap forzados. Tú controlas tus datos.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <span class="material-symbols-rounded icon-download">palette</span>
+            </div>
+            <h3>Estética JEM</h3>
+            <p>Interfaz hermosa y pulida con bordes redondeados y efectos sutiles gracias al lenguaje Jasper Expressive Material.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparativa" class="section">
+      <div class="section-head">
+        <span>El Cambio Real</span>
+        <h2>Comparativa de Sistema</h2>
+        <p>Mira la diferencia entre usar un sistema corporativo tradicional y la libertad de miOS.</p>
+      </div>
+      
+      <div class="grid compare-grid">
+        <div class="compare-card">
+          <div class="compare-brand">
+            <h3>Sistemas Tradicionales</h3>
+          </div>
+          <ul>
+            <li>❌ Telemetría obligatoria en segundo plano</li>
+            <li>❌ Paquetes Snap pesados que ralentizan el inicio</li>
+            <li>❌ Consumo base mayor a 1.5 GB de RAM</li>
+            <li>❌ Actualizaciones forzadas y bloated software</li>
+          </ul>
+        </div>
         
-        <a class="card" href="comparativa.html">
-          <div class="card-icon">
-            <span class="material-symbols-rounded icon-compare">balance</span>
+        <div class="compare-card highlight">
+          <div class="compare-brand">
+            <span class="miOS-mark">miOS (Debian + XFCE)</span>
           </div>
-          <h3 class="animate-letters">Comparativa</h3>
-          <p>Cómo miOS se compara con otras distros populares.</p>
-        </a>
-        
-        <a class="card" href="comunidad.html">
-          <div class="card-icon">
-            <span class="material-symbols-rounded icon-community">group</span>
-          </div>
-          <h3 class="animate-letters">Comunidad</h3>
-          <p>No somos los más rápidos, pero siempre te ayudamos.</p>
-        </a>
+          <ul>
+            <li>✅ Cero telemetría, privacidad absoluta por defecto</li>
+            <li>✅ Paquetes nativos .deb rápidos y limpios</li>
+            <li>✅ Consumo base optimizado (menos de 500MB en reposo)</li>
+            <li>✅ Control total de actualizaciones por el usuario</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="descargas" class="section">
+      <div class="section-head">
+        <span>Obtén el Sistema</span>
+        <h2>Descarga miOS</h2>
+        <p>Elige la edición que mejor se adapte a tus necesidades de hardware.</p>
+      </div>
+      
+      <div class="card glow-card">
+        <div class="card-info">
+          <h3>miOS Hasper (Development ISO)</h3>
+          <p>Prueba las últimas novedades de nuestro entorno de escritorio en desarrollo antes que nadie.</p>
+        </div>
+        <div class="download-links-wrapper">
+          <a href="#" class="btn gradient-btn">Descargar ISO Estable</a>
+          <a href="#" class="btn gradient-btn alternate">Descargar Hasper Developer</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>miOS — una distro personalizable basada en Debian. Sin Snaps. Sin telemetría. Para la comunidad.</p>
+    <p>&copy; 2026 miOS GNU/Linux. Desarrollado con orgullo por y para la comunidad.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
