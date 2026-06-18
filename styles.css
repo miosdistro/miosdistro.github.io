@@ -167,7 +167,7 @@ main {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 28px; /* Radio estricto de 28px */
+  border-radius: 28px; /* Radio estricto de 28px visuales */
   padding: 60px 40px;
   box-shadow: var(--shadow);
   display: flex;
@@ -189,23 +189,24 @@ main {
   margin-bottom: 24px;
 }
 
-/* CAMBIO AQUÍ: Contenedor flexible integrado para alinear texto e icono */
+/* CORRECCIÓN: Estructura flex simétrica para evitar desbordes del bloque de texto principal */
 .hero h1.animate-letters {
-  margin: 0;
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  margin: 0 auto;
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Proporcional para que nunca salte de línea */
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.2;
   letter-spacing: -2px;
   background: var(--accent-gradient);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientMove 6s ease infinite; /* Gradiente animado fluido */
+  animation: gradientMove 6s ease infinite;
   
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px; /* Espaciado controlado para que no se encima con el texto */
+  gap: 12px; /* Separación fija controlada */
+  width: 100%;
 }
 
 .hero-text {
@@ -596,7 +597,7 @@ pre {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 3. El antiguo estilo de .emoji se mantiene intacto por retrocompatibilidad */
+/* 3. El antiguo estilo de .emoji se mantiene por retrocompatibilidad */
 .emoji {
   display: inline-block;
   animation: emojiBounce 3s ease-in-out infinite;
@@ -611,7 +612,7 @@ pre {
 
 /* ==========================================================================
    INTEGRACIÓN Y ANIMACIÓN ESPECÍFICA DE MATERIAL SYMBOLS
-   Optimizado para no romper layouts y heredar los colores miOS dinámicamente.
+   CORRECCIÓN: Forzado estricto de fuente y simetría tipográfica con clamp().
    ========================================================================== */
 
 .material-symbols-rounded {
@@ -626,15 +627,17 @@ pre {
   will-change: transform;
 }
 
-/* Tamaño controlado de los iconos dentro del grid de tarjetas */
+/* Tamaño controlado de los iconos dentro del grid de tarjetas secundarias */
 .card-icon .material-symbols-rounded {
   font-size: 2.3rem;
   color: var(--accent); /* Color azul miOS por defecto */
 }
 
-/* CAMBIO AQUÍ: Icono Cohete con escala relativa controlada para evitar desbordes */
+/* CORRECCIÓN EXPLICITA: Forzado de propiedades tipográficas para el renderizado del icono */
 .icon-rocket {
-  font-size: clamp(2.2rem, 5vw, 4.2rem); /* Escala armónica que no rompe el h1 */
+  font-family: 'Material Symbols Rounded', sans-serif !important;
+  font-size: clamp(2.5rem, 6vw, 4.5rem) !important; /* Misma escala exacta del H1 */
+  display: inline-block;
   background: var(--accent-gradient);
   background-size: 300% 300%;
   -webkit-background-clip: text;
