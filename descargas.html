@@ -6,18 +6,18 @@
   <title>miOS — Descargas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <div class="brand">
+      <a href="index.html" class="brand">
         <span class="brand-get">Get a</span>
-        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="56" height="56" />
+        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="44" height="44" />
         <span class="brand-sub">GNU/Linux</span>
-      </div>
+      </a>
       <nav>
         <a href="caracteristicas.html">Características</a>
         <a href="comparativa.html">Comparativa</a>
@@ -28,48 +28,49 @@
   </header>
 
   <main>
-    <section class="section section-download">
+    <section class="section">
       <div class="section-head">
         <span>Descarga Oficial</span>
-        <h2 class="animate-letters">Lleva miOS a tu equipo</h2>
-        <p>Accede a las versiones oficiales a través de Google Drive. Experimenta un sistema fluido, libre y con todo el rendimiento que necesitas.</p>
+        <h2>Lleva miOS a tu equipo</h2>
+        <p>Accede a las versiones oficiales. Experimenta un sistema fluido, libre y con todo el rendimiento que necesitas.</p>
       </div>
 
-      <div class="download-card glow-card">
-        <div class="card-info">
+      <div class="downloads-container">
+        <div class="downloads-title-box">
           <h3>Ediciones miOS</h3>
-          <p>Requisitos mínimos: 2GB de RAM. En reposo el sistema usa aproximadamente 650–690 MB; en equipos con 16GB puede usar entre 1.2 y 2.2 GB de RAM.</p>
+          <p>Requisitos mínimos: 2GB de RAM. En reposo consume aproximadamente 650–690 MB; en equipos con 16GB puede usar entre 1.2 y 2.2 GB de RAM.</p>
         </div>
-        
-        <div class="download-links-wrapper">
-          <div class="download-item">
-            <img class="download-thumb" src="devices.png" alt="miOS Milky Mint - dispositivos" />
-            <div class="download-info">
-              <a class="btn gradient-btn" href="https://drive.google.com/file/d/1at4UF2MDud6CvCjHkAiS7Ndu_bnOghUP/view?usp=drive_link" target="_blank" rel="noreferrer">miOS Milky Mint</a>
-              <p class="small-copy">Algo clásico y para todos con el escritorio XFCE.</p>
-            </div>
-          </div>
 
-          <div class="download-item">
-            <img class="download-thumb" src="devices.png" alt="miOS Milky Mint SE - dispositivos" />
-            <div class="download-info">
-              <a class="btn gradient-btn alternate" href="https://drive.google.com/file/d/15cpj5Gtf3k_3slBFZv9cEzd-YqxO0NCI/view?usp=drive_link" target="_blank" rel="noreferrer">miOS Milky Mint SE</a>
-              <p class="small-copy">Una edicion hecha para los usuarios roboticos, astronomicos y jovenes.</p>
+        <div class="editions-grid">
+          <article class="edition-card">
+            <div class="edition-media">
+              <img src="devices.png" alt="miOS Milky Mint" />
             </div>
-          </div>
+            <h4>miOS Milky Mint</h4>
+            <p>Algo clásico y para todos con el escritorio XFCE altamente optimizado.</p>
+          </article>
+
+          <article class="edition-card">
+            <div class="edition-media">
+              <img src="devices.png" alt="miOS Milky Mint SE" />
+            </div>
+            <h4>miOS Milky Mint SE</h4>
+            <p>Una edición especial hecha para entusiastas, desarrolladores y creadores modernos.</p>
+          </article>
+        </div>
+
+        <div class="downloads-note">
+          <p>Basado en Debian, pensado para personalizar y rescatar equipos.</p>
         </div>
       </div>
-
-      <p class="small-copy" style="text-align: center; margin-top: 32px;">Basado en Debian, pensado para personalizar y rescatar equipos.</p>
     </section>
 
     <section class="section">
       <div class="section-head">
         <span>Repositorios</span>
-        <h2 class="animate-letters">Sin repos APT oficiales</h2>
-        <p><strong>miOS no mantiene repositorios APT oficiales.</strong> Distribuimos imágenes ISO; los paquetes incluidos proceden de Debian y de fuentes comunitarias. Para instalar software recomendamos usar los repositorios oficiales de Debian, Flatpak o compilar desde la fuente.</p>
-        <p>Verifica la integridad de la ISO con SHA256:</p>
-        <pre><code>sha256sum miOS.iso</code></pre>
+        <h2>Sin Repos APT Oficiales</h2>
+        <p>miOS no mantiene repositorios APT propios. Distribuimos imágenes ISO estables; los paquetes incluidos proceden de Debian y de fuentes comunitarias. Para instalar software recomendamos usar los repositorios oficiales de Debian, Flatpak o compilar desde la fuente.</p>
+        <p class="code-hint">Verifica la integridad de la ISO con SHA256: <br><strong>sha256sum mios.iso</strong></p>
       </div>
     </section>
   </main>

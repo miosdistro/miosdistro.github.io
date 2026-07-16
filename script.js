@@ -41,7 +41,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.card, .compare-card, .community-card, .download-card, .animate-letters').forEach(el => {
+document.querySelectorAll('.card, .compare-card, .compare-box, .community-card, .download-card, .edition-card, .animate-letters').forEach(el => {
   observer.observe(el);
 });
 

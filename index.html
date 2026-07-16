@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>miOS - Distro para crear, jugar y soñar</title>
+  <title>miOS — Tu Sistema Operativo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N9CDW9B7');</script>
-<!-- End Google Tag Manager -->
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
-      <div class="brand">
+      <a href="index.html" class="brand">
         <span class="brand-get">Get a</span>
-        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="56" height="56" />
+        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="40" height="40" />
         <span class="brand-sub">GNU/Linux</span>
-      </div>
+      </a>
       <nav>
         <a href="caracteristicas.html">Características</a>
         <a href="comparativa.html">Comparativa</a>
@@ -35,123 +30,132 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </header>
 
   <main>
+    <!-- HERO SECTION (Estilo CachyOS) -->
     <section class="hero">
       <div class="hero-shell">
+        <!-- Vitrina de Computadoras arriba -->
         <figure class="hero-media">
           <img class="device-img" src="devices.png" alt="miOS en PC y portátil" />
         </figure>
-        <figure class="hero-copy">
+
+        <div class="hero-copy">
           <span class="eyebrow">Pasate a</span>
-          <h1 class="animate-letters">miOS <span class="emoji">🚀</span></h1>
+          <h1>miOS 🚀</h1>
           <p class="hero-text">Una distro basada en Debian, sin snaps ni telemetría, creada para rescatar equipos viejos y devolverles vida. Un sistema personalizable y cercano.</p>
+          
           <div class="hero-pill-group">
             <span>Basado en Debian</span>
             <span>Personalizable</span>
             <span>Requiere mínimo 2GB RAM</span>
           </div>
+
           <div class="hero-buttons">
             <a class="btn primary" href="descargas.html">Descargas</a>
-            <a class="btn outline" href="https://t.me/mioscanaloficial" target="_blank" rel="noreferrer">Únete</a>
+            <a class="btn outline" href="https://t.me/mioscanaloficial" target="_blank">Únete</a>
           </div>
           <p class="hero-note">Sin Snap. Sin telemetría. Hecho por la comunidad para equipos reales.</p>
-        </figure>
+        </div>
       </div>
     </section>
 
-    <section class="section quick-links">
+    <!-- SECCIÓN INCLINADA / ACCESOS RÁPIDOS (Estilo Fedora) -->
+    <section class="quick-links">
       <div class="grid cards-grid">
-        <figure class="card"><a href="descargas.html">
+        <article class="card">
           <div class="card-icon">⬇️</div>
-          <h3 class="animate-letters">Descargas</h3>
+          <h3>Descargas</h3>
           <p>ISO oficial, checksums y guías de instalación.</p>
-        </a></figure>
-        <figure class="card"><a href="caracteristicas.html">
+        </article>
+        <article class="card">
           <div class="card-icon">✨</div>
-          <h3 class="animate-letters">Características</h3>
+          <h3>Características</h3>
           <p>Rendimiento, privacidad y entorno XFCE optimizado.</p>
-        </a></figure>
-        <figure class="card"><a href="comparativa.html">
+        </article>
+        <article class="card">
           <div class="card-icon">⚖️</div>
-          <h3 class="animate-letters">Comparativa</h3>
+          <h3>Comparativa</h3>
           <p>Cómo miOS se compara con otras distros populares.</p>
-        </a></figure>
-        <figure class="card"><a href="comunidad.html">
+        </article>
+        <article class="card">
           <div class="card-icon">👥</div>
-          <h3 class="animate-letters">Comunidad</h3>
+          <h3>Comunidad</h3>
           <p>No somos los más rápidos, pero siempre te ayudamos.</p>
-        </a></figure>
+        </article>
       </div>
     </section>
 
-    <section class="section features">
+    <!-- SECCIÓN QUÉ ES miOS -->
+    <section class="section">
       <div class="section-head">
         <span>Características</span>
         <h2>¿Qué es miOS?</h2>
         <p>miOS es una distribución ligera, personalizable y amigable para ordenadores de escritorio y portátiles.</p>
       </div>
+
       <div class="grid cards-grid">
-        <figure class="card">
+        <article class="card">
           <div class="card-icon">🖌️</div>
           <h3>Diseño gráfico</h3>
           <p>Soporta herramientas como GIMP e Inkscape para creación artística.</p>
-        </figure>
-        <figure class="card">
+        </article>
+        <article class="card">
           <div class="card-icon">💼</div>
           <h3>Productividad</h3>
           <p>Incluye suite ofimática y configuraciones optimizadas para el trabajo diario.</p>
-        </figure>
-        <figure class="card">
+        </article>
+        <article class="card">
           <div class="card-icon">🎮</div>
           <h3>Juegos</h3>
           <p>Compatibilidad con Steam y controladores para juegos ligeros y retro.</p>
-        </figure>
-        <figure class="card">
+        </article>
+        <article class="card">
           <div class="card-icon">🌐</div>
           <h3>Navegación Web</h3>
           <p>Navegadores actualizados y soporte para multimedia en línea.</p>
-        </figure>
+        </article>
       </div>
     </section>
 
-    <section class="section faq-cta">
+    <!-- SECCIÓN PRUÉBALO / CALL TO ACTION -->
+    <section class="section">
       <div class="glow-card">
-        <figure class="card-info">
-          <h3>Pruébalo. ¡Te encantará!</h3>
-          <p>Descarga la ISO, pruébala en modo live y únete a nuestra comunidad.</p>
-          <div class="download-links-wrapper">
-            <a class="btn gradient-btn" href="descargas.html">Descargar ISO</a>
-            <a class="btn gradient-btn alternate" href="caracteristicas.html">Leer características</a>
-          </div>
-        </figure>
+        <h3>Pruébalo. ¡Te encantará!</h3>
+        <p>Descarga la ISO, pruébala en modo live y únete a nuestra comunidad.</p>
+        <div class="download-links-wrapper">
+          <a class="btn primary" href="descargas.html">Descargar ISO</a>
+          <a class="btn outline" href="caracteristicas.html">Leer características</a>
+        </div>
       </div>
     </section>
 
-    <section class="section testimonials">
+    <!-- SECCIÓN LO QUE DICEN -->
+    <section class="section">
       <div class="section-head">
         <span>De la prensa</span>
         <h2>Lo que dicen</h2>
       </div>
+
       <div class="grid cards-grid">
-        <figure class="card">
-          <p>"Ya instalando aunque me decidí en una PC con i7 de 2da generación, de momento inicia rápido"</p>
-          <small>- Oliver Acosta</small>
-        </figure>
-        <figure class="card">
-          <p>"Estoy ancioso."</p>
-          <small>- Dia de lanzamiento</small>
-        </figure>
-        <figure class="card">
-          <p>"Get a miOS"</p>
-          <small>- Eslogan</small>
-        </figure>
+        <article class="card">
+          <p>"Ya instalando, aunque me decidí en una PC con i7 de 2da generación, de momento inicia rápido!"</p>
+          <small class="quote-author">- Oliver Acosta</small>
+        </article>
+        <article class="card">
+          <p>"¡Estoy ansioso!"</p>
+          <small class="quote-author">- Día de lanzamiento</small>
+        </article>
+        <article class="card">
+          <p>"¡Go a miOS!"</p>
+          <small class="quote-author">- Eulogio</small>
+        </article>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>miOS — una distro personalizable basada en Debian. Sin Snaps. Sin telemetría. Para la comunidad.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

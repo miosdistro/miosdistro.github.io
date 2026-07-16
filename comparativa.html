@@ -6,18 +6,18 @@
   <title>miOS — Comparativa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <div class="brand">
+      <a href="index.html" class="brand">
         <span class="brand-get">Get a</span>
-        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="56" height="56" />
+        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="40" height="40" />
         <span class="brand-sub">GNU/Linux</span>
-      </div>
+      </a>
       <nav>
         <a href="caracteristicas.html">Características</a>
         <a href="comparativa.html">Comparativa</a>
@@ -28,51 +28,59 @@
   </header>
 
   <main>
-    <section class="section section-compare">
+    <section class="section">
       <div class="section-head">
         <span>Comparativa</span>
         <h2 class="animate-letters">Ubuntu vs miOS</h2>
         <p>Una comparación clara para elegir un sistema que respeta tu equipo y tu libertad.</p>
       </div>
-      <div class="grid compare-grid">
-        <article class="compare-card">
-          <div class="compare-brand">
+
+      <!-- Contenedor unificado de comparación (Dos columnas perfectas) -->
+      <div class="compare-container">
+        
+        <!-- Bloque de Ubuntu -->
+        <article class="compare-box">
+          <div class="compare-logo-wrapper" style="background-color: #E95420;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ubuntu-logo-no-wordmark-2022.svg/500px-Ubuntu-logo-no-wordmark-2022.svg.png" alt="Ubuntu logo" />
-            <div>
-              <h3>Ubuntu</h3>
-              <p class="compare-tag">Más general, menos ligero</p>
-            </div>
           </div>
-          <ul>
-            <li>Snaps habilitados por defecto 📦</li>
-            <li>Telemetría opcional 📊</li>
-            <li>Escritorio por defecto: GNOME (más recursos) 🖥️</li>
-            <li>Gestión de paquetes: APT + snaps (snapd) 📦</li>
-            <li>Modelo de lanzamientos: LTS y versiones intermedias (soporte oficial de Canonical)</li>
-            <li>Más orientado a equipos modernos y experiencia de escritorio completa 🌐</li>
-          </ul>
+          <div class="compare-info">
+            <h3>Ubuntu</h3>
+            <p class="tagline">Más general, menos ligero</p>
+            <ul class="specs-list">
+              <li><span>📦</span> Snaps habilitados por defecto</li>
+              <li><span>📊</span> Telemetría opcional</li>
+              <li><span>🖥️</span> Escritorio por defecto: GNOME (más recursos)</li>
+              <li><span>📦</span> Gestión de paquetes: APT + snaps (snapd)</li>
+              <li><span>🔄</span> Soporte oficial de Canonical (LTS / intermedias)</li>
+              <li><span>🌐</span> Orientado a equipos modernos y pesados</li>
+            </ul>
+          </div>
         </article>
-        <article class="compare-card highlight">
-          <div class="compare-brand">
+
+        <!-- Bloque de miOS (Destacado) -->
+        <article class="compare-box active">
+          <div class="compare-logo-wrapper compare-logo-mios">
             <span class="miOS-mark">miOS</span>
-            <div>
-              <h3>miOS</h3>
-              <p class="compare-tag">Ligera, libre y personalizable</p>
-            </div>
           </div>
-          <ul>
-            <li>Libre de Snaps ✅</li>
-            <li>Sin telemetría ✅</li>
-            <li>Escritorio por defecto: XFCE optimizado ✅</li>
-            <li>Gestión de paquetes: APT (dpkg/apt) — actualizaciones desde repos Debian y Flathub ✅</li>
-            <li>Optimizada para hardware con recursos limitados; consumo en reposo ≈650–690 MB ✅</li>
-            <li>Enfocada en personalización y comunidad; soporte en canales y chat 👥</li>
-          </ul>
+          <div class="compare-info">
+            <h3>miOS</h3>
+            <p class="tagline">Ligera, libre y personalizable</p>
+            <ul class="specs-list">
+              <li><span>✅</span> Libre de Snaps</li>
+              <li><span>✅</span> Sin telemetría</li>
+              <li><span>✅</span> Escritorio por defecto: XFCE optimizado</li>
+              <li><span>✅</span> Gestión de paquetes: APT (Debian) + Flathub</li>
+              <li><span>✅</span> Optimizado para hardware humilde (≈650–690 MB)</li>
+              <li><span>👥</span> Soporte activo en canales y chat de comunidad</li>
+            </ul>
+          </div>
         </article>
+
       </div>
     </section>
   </main>
 
+  <!-- Footer con estructura modular Fedora -->
   <footer class="footer">
     <p>miOS — una distro personalizable basada en Debian. Sin Snaps. Sin telemetría. Para la comunidad.</p>
   </footer>
