@@ -6,81 +6,70 @@
   <title>miOS — Descargas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-get">Get a</span>
-        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="44" height="44" />
+      <a href="index.html" class="brand" aria-label="miOS GNU/Linux inicio">
+        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="38" height="38" />
         <span class="brand-sub">GNU/Linux</span>
       </a>
       <nav>
         <a href="caracteristicas.html">Características</a>
-        <a href="comparativa.html">Comparativa</a>
         <a href="descargas.html">Descargas</a>
         <a href="comunidad.html">Comunidad</a>
+        <a href="eventos.html">Eventos</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="section">
-      <div class="section-head">
-        <span>Descarga Oficial</span>
-        <h2>Lleva miOS a tu equipo</h2>
-        <p>Accede a las versiones oficiales. Experimenta un sistema fluido, libre y con todo el rendimiento que necesitas.</p>
-      </div>
-
-      <div class="downloads-container">
-        <div class="downloads-title-box">
-          <h3>Ediciones miOS</h3>
-          <p>Requisitos mínimos: 2GB de RAM. En reposo consume aproximadamente 650–690 MB; en equipos con 16GB puede usar entre 1.2 y 2.2 GB de RAM.</p>
+      <div class="dl-layout">
+        <div class="download-banner">
+          <span class="eyebrow">Desarrollo activo</span>
+          <h3>Estamos desarrollando una nueva versión de miOS GNU/Linux</h3>
+          <p>La nueva etapa del proyecto busca reiniciar el concepto del sistema para hacerlo más personalizable, más eficiente, más bonito visualmente y mejor optimizado, manteniendo siempre la esencia original de la distribución.</p>
+          <p>Mientras se trabaja en esa nueva dirección, el objetivo es preparar una base más clara, más estable y mejor adaptada a equipos actuales y antiguos.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="https://www.youtube.com/results?search_query=miOS+GNU%2FLinux" target="_blank" rel="noopener noreferrer">Ver avances en YouTube</a>
+          </div>
+          <div class="warning-box">
+            <strong>Advertencia:</strong> Si deseas probar la versión actual, hazlo bajo tu propio riesgo. No se recomienda probarla en máquinas virtuales debido a fallas conocidas de compatibilidad.
+          </div>
         </div>
 
-        <div class="editions-grid">
-          <article class="edition-card">
-            <div class="edition-media">
-              <img src="devices.png" alt="miOS Milky Mint" />
-            </div>
-            <h4>miOS Milky Mint</h4>
-            <p>Algo clásico y para todos con el escritorio XFCE altamente optimizado.</p>
-            <a class="btn primary" href="https://drive.google.com/file/d/1at4UF2MDud6CvCjHkAiS7Ndu_bnOghUP/view" target="_blank" rel="noopener noreferrer">Descargar desde Drive</a>
-          </article>
+        <div class="download-editions">
+          <h3>Ediciones actuales</h3>
+          <div class="editions-grid">
+            <article class="edition-card">
+              <div class="edition-media">
+                <img src="devices.png" alt="miOS Milky Mint" />
+              </div>
+              <h4>miOS Milky Mint</h4>
+              <p>Edición principal con enfoque en simplicidad y uso diario en equipos de escritorio y portátiles.</p>
+              <a class="btn primary" href="https://drive.google.com/file/d/1at4UF2MDud6CvCjHkAiS7Ndu_bnOghUP/view" target="_blank" rel="noopener noreferrer">Descargar</a>
+            </article>
 
-          <article class="edition-card">
-            <div class="edition-media">
-              <img src="devices.png" alt="miOS Milky Mint SE" />
-            </div>
-            <h4>miOS Milky Mint SE</h4>
-            <p>Una edición especial hecha para entusiastas, desarrolladores y creadores modernos.</p>
-            <a class="btn primary" href="https://drive.google.com/file/d/15cpj5Gtf3k_3slBFZv9cEzd-YqxO0NCI/view" target="_blank" rel="noopener noreferrer">Descargar desde Drive</a>
-          </article>
+            <article class="edition-card">
+              <div class="edition-media">
+                <img src="devices.png" alt="miOS Milky Mint SE" />
+              </div>
+              <h4>miOS Milky Mint SE</h4>
+              <p>Versión especial orientada a usuarios que buscan un sistema más enfocado y personalizable.</p>
+              <a class="btn primary" href="https://drive.google.com/file/d/15cpj5Gtf3k_3slBFZv9cEzd-YqxO0NCI/view" target="_blank" rel="noopener noreferrer">Descargar</a>
+            </article>
+          </div>
         </div>
-
-        <div class="downloads-note">
-          <p>Basado en Debian, pensado para personalizar y rescatar equipos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <span>Repositorios</span>
-        <h2>Sin Repos APT Oficiales</h2>
-        <p>miOS no mantiene repositorios APT propios. Distribuimos imágenes ISO estables; los paquetes incluidos proceden de Debian y de fuentes comunitarias. Para instalar software recomendamos usar los repositorios oficiales de Debian, Flatpak o compilar desde la fuente.</p>
-        <p class="code-hint">Las imágenes están disponibles directamente desde Google Drive para descargar e instalar en tu equipo.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>miOS — una distro personalizable basada en Debian. Sin Snaps. Sin telemetría. Para la comunidad.</p>
+    <p>miOS GNU/Linux — distribución basada en Debian con enfoque en simplicidad, personalización y estabilidad.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -3,159 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>miOS GNU/Linux — Tu Sistema Operativo</title>
+  <title>miOS GNU/Linux</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Varela+Round&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header">
     <div class="header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-get">Get a</span>
-        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="40" height="40" />
+      <a href="index.html" class="brand" aria-label="miOS GNU/Linux inicio">
+        <img class="brand-logo" src="logo-mios.png" alt="miOS logotipo" width="38" height="38" />
         <span class="brand-sub">GNU/Linux</span>
       </a>
       <nav>
         <a href="caracteristicas.html">Características</a>
-        <a href="comparativa.html">Comparativa</a>
         <a href="descargas.html">Descargas</a>
         <a href="comunidad.html">Comunidad</a>
+        <a href="eventos.html">Eventos</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO SECTION (Estilo CachyOS) -->
-    <section class="hero">
-      <div class="hero-shell">
-        <!-- Vitrina de Computadoras arriba -->
-        <figure class="hero-media">
-          <img class="device-img" src="devices.png" alt="miOS en PC y portátil" />
-        </figure>
-
-        <div class="hero-copy">
-          <span class="eyebrow">Pasate a</span>
-          <h1>miOS 🚀</h1>
-          <p class="hero-text">Una distro basada en Debian, sin snaps ni telemetría, creada para rescatar equipos viejos y devolverles vida. Un sistema personalizable y cercano.</p>
-          
-          <div class="hero-pill-group">
-            <span>Basado en Debian</span>
-            <span>Personalizable</span>
-            <span>Requiere mínimo 2GB RAM</span>
-          </div>
-
-          <div class="hero-buttons">
-            <a class="btn primary" href="descargas.html">Descargas</a>
-            <a class="btn outline" href="https://t.me/mioscanaloficial" target="_blank">Únete</a>
-          </div>
-          <p class="hero-note">Sin Snap. Sin telemetría. Hecho por la comunidad para equipos reales.</p>
+    <section class="hero hero-gallery" aria-label="Carrusel de imágenes de miOS GNU/Linux">
+      <div class="gallery-shell">
+        <div class="gallery-track">
+          <figure class="gallery-slide slide-one">
+            <img src="assets/slide-1.png" alt="miOS GNU/Linux vista 1" />
+          </figure>
+          <figure class="gallery-slide slide-two">
+            <img src="assets/slide-2.png" alt="miOS GNU/Linux vista 2" />
+            <a class="gallery-cta" href="eventos.html">Ver eventos</a>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- SECCIÓN INCLINADA / ACCESOS RÁPIDOS (Estilo Fedora) -->
-    <section class="quick-links">
-      <div class="grid cards-grid">
-        <article class="card">
-          <div class="card-icon">⬇️</div>
-          <h3>Descargas</h3>
-          <p>ISO oficial, checksums y guías de instalación.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">✨</div>
+    <section class="feature-stack" aria-label="Secciones principales de miOS GNU/Linux">
+      <article class="feature-panel feature-blue">
+        <div class="feature-media">
+          <img src="assets/feature-descargas.png" alt="Descargas de miOS GNU/Linux" />
+        </div>
+        <div class="feature-copy">
+          <h3>Ediciones</h3>
+          <p>Ediciones listas para probar, instalar y usar con una base estable y clara.</p>
+        </div>
+      </article>
+
+      <article class="feature-panel feature-pink">
+        <div class="feature-copy">
           <h3>Características</h3>
-          <p>Rendimiento, privacidad y entorno XFCE optimizado.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">⚖️</div>
-          <h3>Comparativa</h3>
-          <p>Cómo miOS se compara con otras distros populares.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">👥</div>
-          <h3>Comunidad</h3>
-          <p>No somos los más rápidos, pero siempre te ayudamos.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SECCIÓN QUÉ ES miOS -->
-    <section class="section">
-      <div class="section-head">
-        <span>Características</span>
-        <h2>¿Qué es miOS?</h2>
-        <p>miOS es una distribución ligera, personalizable y amigable para ordenadores de escritorio y portátiles.</p>
-      </div>
-
-      <div class="grid cards-grid">
-        <article class="card">
-          <div class="card-icon">🖌️</div>
-          <h3>Diseño gráfico</h3>
-          <p>Soporta herramientas como GIMP e Inkscape para creación artística.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">💼</div>
-          <h3>Productividad</h3>
-          <p>Incluye suite ofimática y configuraciones optimizadas para el trabajo diario.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🎮</div>
-          <h3>Juegos</h3>
-          <p>Compatibilidad con Steam y controladores para juegos ligeros y retro.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🌐</div>
-          <h3>Navegación Web</h3>
-          <p>Navegadores actualizados y soporte para multimedia en línea.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SECCIÓN PRUÉBALO / CALL TO ACTION -->
-    <section class="section">
-      <div class="glow-card">
-        <h3>Pruébalo. ¡Te encantará!</h3>
-        <p>Descarga la ISO, pruébala en modo live y únete a nuestra comunidad.</p>
-        <div class="download-links-wrapper">
-          <a class="btn primary" href="descargas.html">Descargar ISO</a>
-          <a class="btn outline" href="caracteristicas.html">Leer características</a>
+          <p>Rendimiento, libertad de uso, personalización y una experiencia orientada al usuario.</p>
         </div>
-      </div>
+        <div class="feature-media">
+          <img src="assets/feature-caracteristicas.png" alt="Características de miOS GNU/Linux" />
+        </div>
+      </article>
+
+      <article class="feature-panel feature-yellow">
+        <div class="feature-media">
+          <img src="assets/feature-diseno.png" alt="Diseño de miOS GNU/Linux" />
+        </div>
+        <div class="feature-copy">
+          <h3>Diseño</h3>
+          <p>Una interfaz limpia, legible y moderna pensada para ser cómoda en cualquier equipo.</p>
+        </div>
+      </article>
+
+      <article class="feature-panel feature-green">
+        <div class="feature-copy">
+          <h3>Comunidad</h3>
+          <p>Un proyecto abierto para aprender, compartir, colaborar y crecer junto a la comunidad.</p>
+        </div>
+        <div class="feature-media">
+          <img src="assets/feature-comunidad.png" alt="Comunidad de miOS GNU/Linux" />
+        </div>
+      </article>
     </section>
 
-    <!-- SECCIÓN LO QUE DICEN -->
-    <section class="section">
-      <div class="section-head">
-        <span>De la prensa</span>
-        <h2>Lo que dicen</h2>
-      </div>
-
-      <div class="grid cards-grid">
-        <article class="card">
-          <p>"Ya instalando, aunque me decidí en una PC con i7 de 2da generación, de momento inicia rápido!"</p>
-          <small class="quote-author">- Oliver Acosta</small>
-        </article>
-        <article class="card">
-          <p>"¡Estoy ansioso!"</p>
-          <small class="quote-author">- Día de lanzamiento</small>
-        </article>
-        <article class="card">
-          <p>"Get a miOS GNU/Linux"</p>
-          <small class="quote-author">- Eslogan</small>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
   <footer class="footer">
-    <p>miOS — una distro personalizable basada en Debian. Sin Snaps. Sin telemetría. Para la comunidad.</p>
+    <p>miOS GNU/Linux — distribución basada en Debian con enfoque en simplicidad, personalización y estabilidad.</p>
   </footer>
-
 </body>
 </html>
